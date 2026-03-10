@@ -181,14 +181,3 @@ No notebook, a atencao e implementada com os mesmos blocos conceituais:
 - multiplicacao dos pesos por `V`.
 
 Mesmo em versao simplificada (single-head), esse fluxo ja reproduz o coracao do Transformer.
-
-
----
-
-## Referencias rapidas
-
-- **Entrada:** $X \in \mathbb{R}^{n \times d_{\text{model}}}$
-- **Projecoes:** $Q = XW_Q$, $K = XW_K$, $V = XW_V$
-- **Atencao:** $\mathrm{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
-- **Papel de Q/K/V:** consulta, indice de correspondencia e conteudo combinado
-- **Efeito principal:** representacoes contextualizadas token-a-token
